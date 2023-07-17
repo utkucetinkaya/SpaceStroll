@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LiveStreamViewController" customModule="SpaceStroll" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView1" destination="LtL-Xw-F7Z" id="Rfs-5F-Vyh"/>
+                <outlet property="webView2" destination="kVy-b3-Q97" id="bHg-Ti-lWe"/>
+                <outlet property="webView3" destination="ceS-FA-eJ9" id="03z-G8-dJ0"/>
+                <outlet property="webView4" destination="nbz-0b-Md0" id="RHk-0P-rRw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rfe-Gg-DtQ" customClass="GradientBackgroundView" customModule="SpaceStroll" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="47" width="390" height="797"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v8M-1s-J8N" userLabel="live1" customClass="CardView" customModule="SpaceStroll" customModuleProvider="target">
+                            <rect key="frame" x="20" y="5" width="350" height="170"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zYN-TC-xzd">
+                                    <rect key="frame" x="20" y="0.0" width="310" height="170"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LIVE: NASA Live Stream of Earth from Space (ISS)" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="HfO-7P-cFA">
+                                            <rect key="frame" x="0.0" y="0.0" width="310" height="32"/>
+                                            <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="14"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f8k-NX-Ie6">
+                                            <rect key="frame" x="0.0" y="37" width="310" height="133"/>
+                                            <subviews>
+                                                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LtL-Xw-F7Z">
+                                                    <rect key="frame" x="0.0" y="0.0" width="310" height="133"/>
+                                                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <wkWebViewConfiguration key="configuration" allowsInlineMediaPlayback="YES">
+                                                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                        <wkPreferences key="preferences"/>
+                                                    </wkWebViewConfiguration>
+                                                </wkWebView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="LtL-Xw-F7Z" secondAttribute="trailing" id="JzG-yh-380"/>
+                                                <constraint firstAttribute="bottom" secondItem="LtL-Xw-F7Z" secondAttribute="bottom" id="M09-7k-Fea"/>
+                                                <constraint firstItem="LtL-Xw-F7Z" firstAttribute="leading" secondItem="f8k-NX-Ie6" secondAttribute="leading" id="chL-jf-6lS"/>
+                                                <constraint firstItem="LtL-Xw-F7Z" firstAttribute="top" secondItem="f8k-NX-Ie6" secondAttribute="top" id="fZw-Ec-qK8"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="30"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="zYN-TC-xzd" secondAttribute="trailing" constant="20" id="BVq-jO-Yym"/>
+                                <constraint firstItem="zYN-TC-xzd" firstAttribute="leading" secondItem="v8M-1s-J8N" secondAttribute="leading" constant="20" id="NA4-38-bmy"/>
+                                <constraint firstItem="zYN-TC-xzd" firstAttribute="top" secondItem="v8M-1s-J8N" secondAttribute="top" id="PIx-LI-HeE"/>
+                                <constraint firstAttribute="height" constant="170" id="QEu-Pn-Z9P"/>
+                                <constraint firstAttribute="bottom" secondItem="zYN-TC-xzd" secondAttribute="bottom" id="puU-5J-fTS"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yBK-dt-VUu" userLabel="live2" customClass="CardView" customModule="SpaceStroll" customModuleProvider="target">
+                            <rect key="frame" x="20" y="185" width="350" height="170"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2QV-1v-ap0">
+                                    <rect key="frame" x="20" y="0.0" width="310" height="170"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" NASA Live: Official Stream of NASA TV " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="wxY-jV-EpX">
+                                            <rect key="frame" x="0.0" y="0.0" width="310" height="16"/>
+                                            <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="14"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zeV-NC-fQs">
+                                            <rect key="frame" x="0.0" y="24" width="310" height="146"/>
+                                            <subviews>
+                                                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kVy-b3-Q97">
+                                                    <rect key="frame" x="0.0" y="0.0" width="310" height="146"/>
+                                                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <wkWebViewConfiguration key="configuration" allowsInlineMediaPlayback="YES">
+                                                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                        <wkPreferences key="preferences"/>
+                                                    </wkWebViewConfiguration>
+                                                </wkWebView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="kVy-b3-Q97" secondAttribute="trailing" id="EA2-pS-SfZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="kVy-b3-Q97" secondAttribute="bottom" id="eH5-QX-58a"/>
+                                                <constraint firstItem="kVy-b3-Q97" firstAttribute="leading" secondItem="zeV-NC-fQs" secondAttribute="leading" id="nHC-Wy-6lX"/>
+                                                <constraint firstItem="kVy-b3-Q97" firstAttribute="top" secondItem="zeV-NC-fQs" secondAttribute="top" id="yYv-y9-QfO"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="2QV-1v-ap0" firstAttribute="top" secondItem="yBK-dt-VUu" secondAttribute="top" id="Lx4-G8-vhY"/>
+                                <constraint firstAttribute="height" constant="170" id="lqC-Iy-S5u"/>
+                                <constraint firstItem="2QV-1v-ap0" firstAttribute="leading" secondItem="yBK-dt-VUu" secondAttribute="leading" constant="20" id="r91-er-mpP"/>
+                                <constraint firstAttribute="bottom" secondItem="2QV-1v-ap0" secondAttribute="bottom" id="tPA-FB-Hlh"/>
+                                <constraint firstAttribute="trailing" secondItem="2QV-1v-ap0" secondAttribute="trailing" constant="20" id="zHj-ec-CZS"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FRh-5x-J4a" userLabel="live4" customClass="CardView" customModule="SpaceStroll" customModuleProvider="target">
+                            <rect key="frame" x="20" y="565" width="350" height="190"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3vw-ve-1zh">
+                                    <rect key="frame" x="20" y="0.0" width="310" height="190"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Starbase Live: 24/7 Starship &amp; Super Heavy Development From SpaceX's Boca Chica Facility " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="ht9-g8-kk3">
+                                            <rect key="frame" x="0.0" y="0.0" width="310" height="48"/>
+                                            <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="14"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VR9-FY-fcG">
+                                            <rect key="frame" x="0.0" y="56" width="310" height="134"/>
+                                            <subviews>
+                                                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbz-0b-Md0">
+                                                    <rect key="frame" x="0.0" y="0.0" width="310" height="134"/>
+                                                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <wkWebViewConfiguration key="configuration" allowsInlineMediaPlayback="YES">
+                                                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                        <wkPreferences key="preferences"/>
+                                                    </wkWebViewConfiguration>
+                                                </wkWebView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="nbz-0b-Md0" secondAttribute="bottom" id="Jku-kQ-lgY"/>
+                                                <constraint firstItem="nbz-0b-Md0" firstAttribute="top" secondItem="VR9-FY-fcG" secondAttribute="top" id="ODM-di-C82"/>
+                                                <constraint firstItem="nbz-0b-Md0" firstAttribute="leading" secondItem="VR9-FY-fcG" secondAttribute="leading" id="ekR-yN-e9v"/>
+                                                <constraint firstAttribute="trailing" secondItem="nbz-0b-Md0" secondAttribute="trailing" id="whL-FW-kba"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="3vw-ve-1zh" secondAttribute="bottom" id="BN9-ZL-Xho"/>
+                                <constraint firstItem="3vw-ve-1zh" firstAttribute="leading" secondItem="FRh-5x-J4a" secondAttribute="leading" constant="20" id="hCe-jE-H2J"/>
+                                <constraint firstAttribute="trailing" secondItem="3vw-ve-1zh" secondAttribute="trailing" constant="20" id="iG4-lC-cRE"/>
+                                <constraint firstAttribute="height" constant="190" id="jFe-ef-t22"/>
+                                <constraint firstItem="3vw-ve-1zh" firstAttribute="top" secondItem="FRh-5x-J4a" secondAttribute="top" id="s7F-WT-WuP"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tqo-gM-Ueb" userLabel="live3" customClass="CardView" customModule="SpaceStroll" customModuleProvider="target">
+                            <rect key="frame" x="20" y="365" width="350" height="190"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="n7E-hT-RUP">
+                                    <rect key="frame" x="20" y="0.0" width="310" height="190"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" SpaceX Falcon 9 launched Axiom Space’s Axiom Mission 2 (Ax-2) to the International Space Station " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Oiv-6s-1Lg">
+                                            <rect key="frame" x="0.0" y="0.0" width="310" height="48"/>
+                                            <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="14"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4tE-kR-eHF">
+                                            <rect key="frame" x="0.0" y="56" width="310" height="134"/>
+                                            <subviews>
+                                                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceS-FA-eJ9">
+                                                    <rect key="frame" x="0.0" y="0.0" width="310" height="134"/>
+                                                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <wkWebViewConfiguration key="configuration" allowsInlineMediaPlayback="YES">
+                                                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                        <wkPreferences key="preferences"/>
+                                                    </wkWebViewConfiguration>
+                                                </wkWebView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="ceS-FA-eJ9" secondAttribute="bottom" id="LKc-Vp-Fm6"/>
+                                                <constraint firstAttribute="trailing" secondItem="ceS-FA-eJ9" secondAttribute="trailing" id="Sw9-OE-Mj1"/>
+                                                <constraint firstItem="ceS-FA-eJ9" firstAttribute="leading" secondItem="4tE-kR-eHF" secondAttribute="leading" id="h2z-dS-oXd"/>
+                                                <constraint firstItem="ceS-FA-eJ9" firstAttribute="top" secondItem="4tE-kR-eHF" secondAttribute="top" id="jwV-SX-IEa"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="n7E-hT-RUP" secondAttribute="trailing" constant="20" id="CEB-gR-PdL"/>
+                                <constraint firstAttribute="bottom" secondItem="n7E-hT-RUP" secondAttribute="bottom" id="Dza-ZT-Bzu"/>
+                                <constraint firstItem="n7E-hT-RUP" firstAttribute="leading" secondItem="tqo-gM-Ueb" secondAttribute="leading" constant="20" id="YSB-v9-AVl"/>
+                                <constraint firstAttribute="height" constant="190" id="e4s-fq-H01"/>
+                                <constraint firstItem="n7E-hT-RUP" firstAttribute="top" secondItem="tqo-gM-Ueb" secondAttribute="top" id="fxx-yD-jwF"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="tqo-gM-Ueb" firstAttribute="top" secondItem="yBK-dt-VUu" secondAttribute="bottom" constant="10" id="I6E-be-B5c"/>
+                        <constraint firstItem="yBK-dt-VUu" firstAttribute="leading" secondItem="Rfe-Gg-DtQ" secondAttribute="leading" constant="20" id="LNq-7P-VMu"/>
+                        <constraint firstAttribute="trailing" secondItem="tqo-gM-Ueb" secondAttribute="trailing" constant="20" id="Lnl-qu-Ws0"/>
+                        <constraint firstItem="FRh-5x-J4a" firstAttribute="top" secondItem="tqo-gM-Ueb" secondAttribute="bottom" constant="10" id="RlS-Ls-yWH"/>
+                        <constraint firstAttribute="trailing" secondItem="yBK-dt-VUu" secondAttribute="trailing" constant="20" id="UIk-Xz-9dX"/>
+                        <constraint firstItem="yBK-dt-VUu" firstAttribute="top" secondItem="v8M-1s-J8N" secondAttribute="bottom" constant="10" id="VGA-IA-UyU"/>
+                        <constraint firstAttribute="trailing" secondItem="v8M-1s-J8N" secondAttribute="trailing" constant="20" id="auS-El-kMb"/>
+                        <constraint firstItem="v8M-1s-J8N" firstAttribute="leading" secondItem="Rfe-Gg-DtQ" secondAttribute="leading" constant="20" id="jEC-fk-SaW"/>
+                        <constraint firstItem="v8M-1s-J8N" firstAttribute="top" secondItem="Rfe-Gg-DtQ" secondAttribute="top" constant="5" id="mg4-16-MV5"/>
+                        <constraint firstItem="FRh-5x-J4a" firstAttribute="leading" secondItem="Rfe-Gg-DtQ" secondAttribute="leading" constant="20" id="s1e-hF-vk1"/>
+                        <constraint firstItem="tqo-gM-Ueb" firstAttribute="leading" secondItem="Rfe-Gg-DtQ" secondAttribute="leading" constant="20" id="sKZ-uN-t22"/>
+                        <constraint firstAttribute="trailing" secondItem="FRh-5x-J4a" secondAttribute="trailing" constant="20" id="wAq-hS-2AZ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="point" keyPath="startPoint">
+                            <point key="value" x="0.0" y="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="point" keyPath="endPoint">
+                            <point key="value" x="0.0" y="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                            <color key="value" red="0.033264942470000003" green="0.67473691700000005" blue="0.78031963110000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                            <color key="value" red="0.043137254899999998" green="0.074509803920000006" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Rfe-Gg-DtQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3xZ-uU-G6A"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Rfe-Gg-DtQ" secondAttribute="trailing" id="8vg-0F-DR1"/>
+                <constraint firstAttribute="bottom" secondItem="Rfe-Gg-DtQ" secondAttribute="bottom" id="9xl-SG-NQK"/>
+                <constraint firstItem="Rfe-Gg-DtQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="dg8-xW-weG"/>
+            </constraints>
+            <point key="canvasLocation" x="-3.0769230769230766" y="20.616113744075829"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

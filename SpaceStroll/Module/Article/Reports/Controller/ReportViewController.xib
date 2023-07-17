@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReportViewController" customModule="SpaceStroll" customModuleProvider="target">
+            <connections>
+                <outlet property="reportTableView" destination="ydO-f5-f1C" id="F81-om-7Vo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LNe-45-KEO">
+                    <rect key="frame" x="0.0" y="47" width="390" height="797"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ISS_Daily_Summary_Report" translatesAutoresizingMaskIntoConstraints="NO" id="8AY-Sn-FWS">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="235"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="235" id="Tgi-nm-klN"/>
+                                <constraint firstAttribute="width" constant="390" id="hDH-Hh-gk2"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jDR-Hv-kw2">
+                            <rect key="frame" x="10" y="245" width="370" height="40"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nasa" translatesAutoresizingMaskIntoConstraints="NO" id="mWP-fH-vki">
+                                    <rect key="frame" x="0.0" y="0.0" width="45" height="40"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="45" id="97C-JJ-yJj"/>
+                                        <constraint firstAttribute="height" constant="40" id="GgQ-87-5QU"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ISS Daily Summary Report" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQE-2E-ET0">
+                                    <rect key="frame" x="45" y="11.333333333333313" width="325" height="17.333333333333329"/>
+                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="15"/>
+                                    <color key="textColor" red="0.043137254899999998" green="0.074509803920000006" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ydO-f5-f1C">
+                            <rect key="frame" x="0.0" y="290" width="390" height="507"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ydO-f5-f1C" secondAttribute="bottom" id="7Yy-ef-YI6"/>
+                        <constraint firstAttribute="trailing" secondItem="jDR-Hv-kw2" secondAttribute="trailing" constant="10" id="8Zf-w6-gDI"/>
+                        <constraint firstAttribute="trailing" secondItem="ydO-f5-f1C" secondAttribute="trailing" id="NH6-XG-42B"/>
+                        <constraint firstItem="ydO-f5-f1C" firstAttribute="leading" secondItem="LNe-45-KEO" secondAttribute="leading" id="NuA-9V-2ML"/>
+                        <constraint firstItem="8AY-Sn-FWS" firstAttribute="top" secondItem="LNe-45-KEO" secondAttribute="top" id="TZf-1Z-USe"/>
+                        <constraint firstItem="jDR-Hv-kw2" firstAttribute="leading" secondItem="LNe-45-KEO" secondAttribute="leading" constant="10" id="VQl-zO-eOm"/>
+                        <constraint firstItem="jDR-Hv-kw2" firstAttribute="top" secondItem="8AY-Sn-FWS" secondAttribute="bottom" constant="10" id="XyD-3G-fvV"/>
+                        <constraint firstItem="ydO-f5-f1C" firstAttribute="top" secondItem="jDR-Hv-kw2" secondAttribute="bottom" constant="5" id="dhp-XI-aiz"/>
+                        <constraint firstAttribute="trailing" secondItem="8AY-Sn-FWS" secondAttribute="trailing" id="vnF-Dh-Vjb"/>
+                        <constraint firstItem="8AY-Sn-FWS" firstAttribute="leading" secondItem="LNe-45-KEO" secondAttribute="leading" id="zGP-tI-HCf"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                            <color key="value" red="0.033264942470000003" green="0.67473691700000005" blue="0.78031963110000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="point" keyPath="startPoint">
+                            <point key="value" x="0.0" y="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="point" keyPath="endPoint">
+                            <point key="value" x="0.0" y="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LNe-45-KEO" secondAttribute="trailing" id="1NU-5Q-4BV"/>
+                <constraint firstAttribute="bottom" secondItem="LNe-45-KEO" secondAttribute="bottom" id="2bf-Tg-u6N"/>
+                <constraint firstItem="LNe-45-KEO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Cdz-Rr-qng"/>
+                <constraint firstItem="LNe-45-KEO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="iUf-JA-UZ3"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                    <color key="value" red="0.033264942470000003" green="0.67473691700000005" blue="0.78031963110000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="point" keyPath="startPoint">
+                    <point key="value" x="0.0" y="0.0"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="point" keyPath="endPoint">
+                    <point key="value" x="0.0" y="1"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="44.615384615384613" y="20.616113744075829"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ISS_Daily_Summary_Report" width="1066.6666259765625" height="800"/>
+        <image name="nasa" width="266.66665649414062" height="266.66665649414062"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

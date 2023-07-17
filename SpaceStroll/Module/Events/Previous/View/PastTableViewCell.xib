@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PastTableViewCell" customModule="SpaceStroll" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="513" height="285"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="513" height="285"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q8n-Pq-Irs" customClass="CardView" customModule="SpaceStroll" customModuleProvider="target">
+                        <rect key="frame" x="10" y="0.0" width="493" height="270"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="y7C-4Z-Z0h">
+                                <rect key="frame" x="190" y="10" width="293" height="37"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="G3W-52-L9N">
+                                        <rect key="frame" x="0.0" y="0.0" width="293" height="16"/>
+                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="14"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="location" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="hAS-j8-u2n">
+                                        <rect key="frame" x="0.0" y="21" width="293" height="16"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="13"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fob-Fb-I63">
+                                <rect key="frame" x="0.0" y="0.0" width="180" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="270" id="LWq-tV-m7S"/>
+                                    <constraint firstAttribute="width" constant="180" id="SpZ-5s-hLJ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rA1-Pw-TNh">
+                                <rect key="frame" x="190" y="57" width="293" height="205"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="desc" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="GgC-LE-6Ap">
+                                        <rect key="frame" x="0.0" y="0.0" width="293" height="185"/>
+                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="13"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="ZiT-wm-w78">
+                                        <rect key="frame" x="0.0" y="190" width="293" height="15"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="13"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.118523322" green="0.118523322" blue="0.118523322" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fob-Fb-I63" firstAttribute="leading" secondItem="q8n-Pq-Irs" secondAttribute="leading" id="Dh9-BF-n2G"/>
+                            <constraint firstItem="rA1-Pw-TNh" firstAttribute="leading" secondItem="fob-Fb-I63" secondAttribute="trailing" constant="10" id="EE2-YC-LaR"/>
+                            <constraint firstAttribute="bottom" secondItem="rA1-Pw-TNh" secondAttribute="bottom" constant="8" id="FEM-11-b01"/>
+                            <constraint firstAttribute="trailing" secondItem="rA1-Pw-TNh" secondAttribute="trailing" constant="10" id="Hgy-QV-P20"/>
+                            <constraint firstItem="y7C-4Z-Z0h" firstAttribute="top" secondItem="q8n-Pq-Irs" secondAttribute="top" constant="10" id="MLn-ox-Y5u"/>
+                            <constraint firstAttribute="bottom" secondItem="fob-Fb-I63" secondAttribute="bottom" id="fWC-MY-DeE"/>
+                            <constraint firstAttribute="trailing" secondItem="y7C-4Z-Z0h" secondAttribute="trailing" constant="10" id="gEB-5H-II8"/>
+                            <constraint firstItem="fob-Fb-I63" firstAttribute="top" secondItem="q8n-Pq-Irs" secondAttribute="top" id="h6L-6f-hc8"/>
+                            <constraint firstItem="y7C-4Z-Z0h" firstAttribute="leading" secondItem="fob-Fb-I63" secondAttribute="trailing" constant="10" id="kfx-fV-Zwc"/>
+                            <constraint firstItem="rA1-Pw-TNh" firstAttribute="top" secondItem="y7C-4Z-Z0h" secondAttribute="bottom" constant="10" id="wJg-93-jpo"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="q8n-Pq-Irs" secondAttribute="trailing" constant="10" id="6Gv-0s-WIP"/>
+                    <constraint firstItem="q8n-Pq-Irs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="PIk-GS-Ebx"/>
+                    <constraint firstAttribute="bottom" secondItem="q8n-Pq-Irs" secondAttribute="bottom" constant="15" id="Qqy-pU-vpU"/>
+                    <constraint firstItem="q8n-Pq-Irs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="scp-fT-SqZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="dateLabel" destination="ZiT-wm-w78" id="vJM-qa-4mi"/>
+                <outlet property="descLabel" destination="GgC-LE-6Ap" id="f1R-RO-prH"/>
+                <outlet property="locationLabel" destination="hAS-j8-u2n" id="92O-C8-mQy"/>
+                <outlet property="nameLabel" destination="G3W-52-L9N" id="hoi-Z3-4tc"/>
+                <outlet property="pastEventsImageView" destination="fob-Fb-I63" id="Ijv-fC-aqc"/>
+            </connections>
+            <point key="canvasLocation" x="-3" y="21"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
