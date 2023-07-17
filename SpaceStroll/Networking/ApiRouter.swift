@@ -31,4 +31,4 @@ enum Router: String {
     }
 }
 
-let apiKey = "S20SMmpa8GWXltL7mTIWqnAY2rGxVKDT55tr1Pe3"
+let apiKey = "DEMO_KEY"
