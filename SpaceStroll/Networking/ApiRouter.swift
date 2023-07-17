@@ -18,7 +18,7 @@ enum Router: String {
     case upcomingEvents = "https://ll.thespacedevs.com/2.2.0/event/upcoming/?format=json&limit=30"
     case previousEvents = "https://ll.thespacedevs.com/2.2.0/event/previous/?format=json&limit=30"
     case programs = "https://ll.thespacedevs.com/2.2.0/program/?format=json&limit=22"
-    case apodElement = "https://api.nasa.gov/planetary/apod?count=100&api_key=S20SMmpa8GWXltL7mTIWqnAY2rGxVKDT55tr1Pe3"
+    case apodElement = "https://api.nasa.gov/planetary/apod?count=100&api_key=DEMO_KEY"
     case marsPhotos = "https://api.nasa.gov/mars-photos/api/v1/rovers/perseverance/latest_photos"
     
     var requiresApiKey: Bool {
