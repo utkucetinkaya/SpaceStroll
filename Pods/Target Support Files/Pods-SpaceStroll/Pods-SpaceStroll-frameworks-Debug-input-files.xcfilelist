@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-SpaceStroll/Pods-SpaceStroll-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
+${BUILT_PRODUCTS_DIR}/Parchment/Parchment.framework
+${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework
+${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper/youtube_ios_player_helper.framework
