@@ -34,7 +34,7 @@ Space Stroll is a mobile application that provides a platform for space enthusia
 
 To get started with Space Stroll, follow these steps:
 
-1. Clone the repository: utkucetinkaya/SpaceStroll.git
+1. Clone the repository: git@github.com:utkucetinkaya/SpaceStroll.git
 2. Install the required dependencies using CocoaPods:
    cd SpaceStroll-main
    pod install
