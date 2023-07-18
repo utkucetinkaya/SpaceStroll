@@ -56,9 +56,9 @@ Contributions to Space Stroll are welcome! If you have any suggestions, bug repo
   </tr>
   
   <tr>
-    <td><img width="314" alt="Splash" src="https://github.com/utkucetinkaya/SpaceStroll/assets/61903359/1a38a31b-765b-41ad-a9b3-fc7bb734262c"></td>
-    <td><img width="315" alt="Home" src="https://github.com/utkucetinkaya/SpaceStroll/assets/61903359/d3c14dfb-4109-494f-9bdf-65472a24cc2b"></td>
-    <td><img width="315" alt="Apod" src="https://github.com/utkucetinkaya/SpaceStroll/assets/61903359/c51e86a3-b30b-4372-afd8-791c9703ff11"></td>
+    <td><img width="314" alt="Splash" src="https://github.com/utkucetinkaya/SpaceStroll/assets/61903359/0f7e638d-5f92-41d0-a0f8-15c376760f18"></td>
+    <td><img width="315" alt="Home" src="https://github.com/utkucetinkaya/SpaceStroll/assets/61903359/c250fe02-067c-40d5-a2b2-48d1d93b7151"></td>
+    <td><img width="315" alt="Apod" src="https://github.com/utkucetinkaya/SpaceStroll/assets/61903359/f3252aab-e64a-4cc0-83cf-99a4c764ea26"></td>
   </tr>
  </table>
 
@@ -71,9 +71,9 @@ Contributions to Space Stroll are welcome! If you have any suggestions, bug repo
   </tr>
 
   <tr>
-    <td><img width="315" alt="LiveStream" src="https://github.com/utkucetinkaya/SpaceStroll/assets/61903359/c5ea06a0-df2f-469d-83e6-038810a39992"></td>
-    <td><img width="315" alt="Explore" src="https://github.com/utkucetinkaya/SpaceStroll/assets/61903359/549afad1-b4a5-47ee-a591-f2bede6f656a"></td>
-    <td><img width="315" alt="Launches" src="https://github.com/utkucetinkaya/SpaceStroll/assets/61903359/c1463fab-b12e-483a-8865-8704f9e1ac09"></td>
+    <td><img width="315" alt="LiveStream" src="https://github.com/utkucetinkaya/SpaceStroll/assets/61903359/22e014b3-375b-4d43-b6fb-f6d6dd957913"></td>
+    <td><img width="315" alt="Explore" src="https://github.com/utkucetinkaya/SpaceStroll/assets/61903359/1552aa18-f88d-459d-aa5a-c9d143d9c78b"></td>
+    <td><img width="315" alt="Launches" src="https://github.com/utkucetinkaya/SpaceStroll/assets/61903359/8c872980-7fca-4396-b5e5-121582b0f262"></td>
 
   </tr>
  </table>
@@ -87,9 +87,9 @@ Contributions to Space Stroll are welcome! If you have any suggestions, bug repo
   </tr>
   
   <tr>
-    <td><img width="315" alt="MarsPhotos" src="https://github.com/utkucetinkaya/SpaceStroll/assets/61903359/75292048-e52a-4b66-b274-79a1479f2bea"></td>
-    <td><img width="315" alt="Events" src="https://github.com/utkucetinkaya/SpaceStroll/assets/61903359/731ed300-fd1b-4097-8f86-bf16a7d4d971"></td>
-    <td><img width="315" alt="Articles" src="https://github.com/utkucetinkaya/SpaceStroll/assets/61903359/2df4fd57-54eb-46f9-bdc9-25b1b7b841e0"></td>
+    <td><img width="315" alt="MarsPhotos" src="https://github.com/utkucetinkaya/SpaceStroll/assets/61903359/ab01e998-cc15-4df7-87ec-adaa3941cdcc"></td>
+    <td><img width="315" alt="Events" src="https://github.com/utkucetinkaya/SpaceStroll/assets/61903359/50c51d67-1a55-4d2f-8814-296a4fc726b8"></td>
+    <td><img width="315" alt="Articles" src="https://github.com/utkucetinkaya/SpaceStroll/assets/61903359/8e75575d-210f-4aa2-88b7-acc910cf7944"></td>
     
   </tr>
  </table>
@@ -102,19 +102,8 @@ Contributions to Space Stroll are welcome! If you have any suggestions, bug repo
   </tr>
   
   <tr>
-    <td><img width="315" alt="AstronomyPod" src="https://github.com/utkucetinkaya/SpaceStroll/assets/61903359/f7f1058c-884f-4947-a222-f43fc6203a93"></td>
-    <td><img width="271" alt="space programs" src="https://github.com/utkucetinkaya/SpaceStroll/assets/61903359/6c37be37-c24b-49c7-8dda-519ef2174ef3"></td>
+    <td><img width="315" alt="AstronomyPod" src="https://github.com/utkucetinkaya/SpaceStroll/assets/61903359/ca1fcf0c-af1e-40ab-a2d2-d318eded5226"></td>
+    <td><img width="271" alt="space programs" src="https://github.com/utkucetinkaya/SpaceStroll/assets/61903359/f890f474-6ea7-4de2-bf4f-b725221df32b"></td>
     
   </tr>
  </table>
-
-
-
-
-
-
-
-
-
-
-
